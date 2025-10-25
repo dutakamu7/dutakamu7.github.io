@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💻 Portofolio – Duta Hilmy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {box-sizing: border-box; margin: 0; padding: 0;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0b1220, #1e293b);
+      color: #e2e8f0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      position: relative;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #60a5fa;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      max-width: 600px;
+    }
+
+    /* ===== FOTO PROFIL FINAL ===== */
+    .profile-pic {
+      position: fixed;
+      top: 25px;
+      right: 35px;
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      border: 3px solid #60a5fa;
+      object-fit: cover;
+      z-index: 1000; /* agar tidak tertutup teks */
+      background-color: #0b1220;
+      box-shadow: 0 0 15px rgba(96,165,250,0.5); /* efek lembut */
+    }
+
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      animation: slideUp 1s ease forwards;
+    }
+
+    section {margin-bottom: 2rem;}
+    h2 {color: #60a5fa; margin-bottom: 1rem;}
+
+    ul {list-style-type: '🚀 '; margin-left: 1rem;}
+
+    .skills span, .tech span {
+      display: inline-block;
+      background: rgba(96,165,250,0.15);
+      color: #93c5fd;
+      padding: 5px 10px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.9rem;
+      transition: transform 0.3s ease;
+    }
+
+    .skills span:hover, .tech span:hover {
+      transform: scale(1.1);
+      background: #2563eb;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #94a3b8;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {from {opacity: 0;} to {opacity: 1;}}
+    @keyframes slideUp {from {transform: translateY(30px); opacity: 0;} to {transform: translateY(0); opacity: 1;}}
+
+    @media (max-width: 600px) {
+      main {padding: 1.5rem;}
+      header h1 {font-size: 1.4rem;}
+      .profile-pic {
+        width: 70px;
+        height: 70px;
+        top: 15px;
+        right: 15px;
+        box-shadow: 0 0 10px rgba(96,165,250,0.4);
+      }
+    }
+  </style>
+  <link rel="icon" href="laptop.jpg">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>💻 PORTOFOLIO – DUTA HILMY</h1>
+      <p>Mahasiswa S1 Teknik Komputer | Inovator Teknologi | Calon Engineer Masa Depan</p>
+    </div>
+    <img src="duta.jpg" alt="Foto Duta Hilmy" class="profile-pic">
+  </header>
+
+  <main>
+    <section>
+      <h2>🌟 Profil Singkat</h2>
+      <p>Saya adalah mahasiswa <strong>S1 Teknik Komputer di Telkom University</strong> yang memiliki semangat tinggi dalam mengembangkan solusi berbasis teknologi. Dengan perpaduan antara logika teknis dan kreativitas desain, saya berfokus pada pembuatan sistem cerdas yang efisien, modern, dan berdampak sosial. Saya percaya bahwa teknologi bukan hanya alat, tapi juga jembatan menuju perubahan positif bagi masyarakat.</p>
+    </section>
+
+    <section>
+      <h2>⚙️ Keahlian Utama</h2>
+      <div class="skills">
+        <span>C / C++</span>
+        <span>Python</span>
+        <span>Arduino</span>
+        <span>Java</span>
+        <span>IoT Systems</span>
+        <span>ESP32 / Raspberry Pi</span>
+        <span>UI/UX (Canva, Figma)</span>
+        <span>Komunikasi Teknis</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>🚀 Proyek Unggulan</h2>
+
+      <h3>🧠 Smart Green Campus – Tempat Sampah Pintar</h3>
+      <p>Membuat sistem tempat sampah otomatis berbasis sensor ultrasonik dan servo untuk mendukung konsep <em>Smart Campus Ramah Lingkungan</em>.</p>
+      <p><strong>Teknologi:</strong> Arduino, HC-SR04, Servo Motor<br><strong>Peran:</strong> Perancang Sistem & Programmer</p>
+
+      <h3>💡 Monitoring Suhu Ruangan IoT</h3>
+      <p>Membangun prototipe sistem pemantauan suhu ruangan real-time berbasis web dashboard.</p>
+      <p><strong>Teknologi:</strong> ESP8266, DHT11, Firebase<br><strong>Peran:</strong> Pengembang & Desainer UI</p>
+
+      <h3>⚡ Robot Line Follower</h3>
+      <p>Mengembangkan robot sederhana berbasis sensor inframerah untuk mengikuti jalur otomatis.</p>
+      <p><strong>Teknologi:</strong> Arduino Uno, Sensor IR, Motor Driver L298N</p>
+    </section>
+
+    <section>
+      <h2>🎓 Pendidikan</h2>
+      <p><strong>Telkom University – Fakultas Teknik Elektro</strong><br>
+      Sarjana Teknik Komputer (S1)<br>
+      📅 2023 – Sekarang<br>
+      📍 Bandung, Jawa Barat</p>
+      <p>Konsentrasi pada pengembangan sistem berbasis <strong>Internet of Things (IoT)</strong>, pemrograman embedded, dan otomasi cerdas. Aktif berpartisipasi dalam berbagai proyek teknologi dan kegiatan inovatif di lingkungan kampus.</p>
+    </section>
+
+    <section>
+      <h2>🏅 Prestasi & Kegiatan</h2>
+      <ul>
+        <li>Anggota Tim Wilayah Pelajar Penggerak Merah Putih</li>
+        <li>Peserta Hackathon Kampus Inovatif 2025</li>
+        <li>Aktif dalam kegiatan kampus dan komunitas teknologi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>📫 Kontak</h2>
+      <p>📧 Email: <strong>[email protected]</strong><br>
+      🔗 LinkedIn: <strong>linkedin.com/in/dutahilmy</strong><br>
+      📍 Domisili: <strong>Indonesia</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Duta Hilmy — Portofolio</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Transition on scroll
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, {threshold: 0.2});
+
+    sections.forEach(sec => {
+      sec.style.opacity = 0;
+      sec.style.transform = 'translateY(30px)';
+      sec.style.transition = 'all 0.8s ease';
+      observer.observe(sec);
+    });
+  </script>
+</body>
+</html>
